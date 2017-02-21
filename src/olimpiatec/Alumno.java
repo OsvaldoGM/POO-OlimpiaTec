@@ -47,4 +47,9 @@ public class Alumno {
             }
             return false;
     }
+    
+    @Override
+    public String toString(){
+        return "Name = " +this.name + " , Matricula = " +this.matricula +" , and sports = " +this.deporte;
+    } 
 }
