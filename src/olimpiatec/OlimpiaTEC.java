@@ -16,6 +16,11 @@ public class OlimpiaTEC {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Alumno osvaldo = new Alumno("Osvaldo", "A01411556");
+        Deporte LOL = new Deporte("LOL");
+        osvaldo.addDeporte(LOL);
+        LOL.addAlumno(osvaldo);
+        System.out.println(LOL);
     }
-    
+        
 }
