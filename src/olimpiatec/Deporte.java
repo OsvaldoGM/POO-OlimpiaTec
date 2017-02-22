@@ -30,6 +30,7 @@ public class Deporte {
                 return false;
         }
         this.alumnos.add(alumno);
+        alumno.addDeporte(this);
         return true;
     }
     
@@ -44,6 +45,10 @@ public class Deporte {
     
     @Override
     public String toString(){
-        return "Sport = "+this.name+" , students = " +this.alumnos;
-    } 
+        String a= " Sport = " +this.getName() +"\n";
+        for (Alumno participante : alumnos) {
+          a+="Name = " +participante.getName() +", Matricula = "+participante.getMatricula() +"\n";
+        }
+        return a;
+    }
 }
